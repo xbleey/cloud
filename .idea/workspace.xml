@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1d88369-518a-4c66-8a22-1bdc4f3915c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrix-turbine/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipkin1/src/main/java/com/xbleey/controller/MiyaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/xbleey/client/ClientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/xbleey/client/ClientApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/xbleey/client/controller/RestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zipkin/src/main/java/com/xbleey/controller/HiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zipkin/src/main/java/com/xbleey/controller/HiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zipkin/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/zipkin/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,12 +30,6 @@
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>pom</find>
-      <find>statusPageUrlPath</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,6 +52,7 @@
   <component name="ProjectId" id="1VVYkoyMEmQObaPY94cz51GL2Xh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -79,7 +85,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ZipkinApplication">
+  <component name="RunManager" selected="Spring Boot.GatewayApplication">
     <configuration name="ClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="client" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.xbleey.client.ClientApplication" />
@@ -118,9 +124,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xbleey.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HystrixTurbineApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="hystrix-turbine" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xbleey.HystrixTurbineApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RibbonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ribbon" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.xbleey.RibbonApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Zipkin1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="zipkin1" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xbleey.Zipkin1Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -154,6 +181,9 @@
       <item itemvalue="Spring Boot.RibbonApplication" />
       <item itemvalue="Spring Boot.ConfigApplication" />
       <item itemvalue="Spring Boot.ConfigClientApplication" />
+      <item itemvalue="Spring Boot.Zipkin1Application" />
+      <item itemvalue="Spring Boot.HystrixTurbineApplication" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
     </list>
   </component>
   <component name="ServiceViewManager">
@@ -165,6 +195,40 @@
         </treeState>
       </serviceView>
     </option>
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@59423d4a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@59423d4a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@2af03d50" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@59423d4a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@2be44096" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+          <option name="viewType" value="contributor" />
+          <option name="roots">
+            <list>
+              <ServiceState>
+                <option name="contributor" value="com.intellij.execution.dashboard.RunConfigurationsServiceViewContributor" />
+              </ServiceState>
+            </list>
+          </option>
+        </serviceView>
+      </list>
+    </option>
+    <option name="selectedView" value="0" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -191,7 +255,8 @@
       <workItem from="1559787907100" duration="8485000" />
       <workItem from="1577339876388" duration="1289000" />
       <workItem from="1577341186489" duration="1112000" />
-      <workItem from="1577343193151" duration="721000" />
+      <workItem from="1577343193151" duration="1012000" />
+      <workItem from="1577347718862" duration="4225000" />
     </task>
     <task id="LOCAL-00001" summary="v1.4idea的模块配置修改">
       <created>1577343296670</created>
@@ -200,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577343296670</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="v1.5 添加了MIT的许可，全员可偷">
+      <created>1577343972370</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1577343972370</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,7 +294,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="v1.0&#10;1.创建文件&#10;2.加入了spring cloud eureka&#10;3.加入了spring actuator&#10;4.可以完美运行" />
     <MESSAGE value="v1.4idea的模块配置修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.4idea的模块配置修改" />
+    <MESSAGE value="v1.5 添加了MIT的许可，全员可偷" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.5 添加了MIT的许可，全员可偷" />
   </component>
   <component name="mavenExecuteGoalHistory">
     <option value="" />

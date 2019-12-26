@@ -1,8 +1,8 @@
 /**
  * Copyright (C), 2019-2019, XXX有限公司
- * FileName: HiController
+ * FileName: MiyaController
  * Author:   11580
- * Date:     2019/12/26 0026 14:07
+ * Date:     2019/12/26 0026 16:10
  * Description:
  * History:
  * <author>          <time>          <version>          <desc>
@@ -28,30 +28,28 @@ import org.springframework.web.client.RestTemplate;
  * @since 1.0.0
  */
 @RestController
-public class HiController {
-    private static final Logger LOGGER = LoggerFactory.getLogger(HiController.class);
-
-
+public class MiyaController {
+    private static final Logger LOGGER = LoggerFactory.getLogger(MiyaController.class);
     @Autowired
     private RestTemplate restTemplate;
+
+    @RequestMapping("/hi")
+    public String home() {
+        LOGGER.info("hi is being called");
+        return "hi i'm miya!";
+    }
+
+    @RequestMapping("/miya")
+    public String info() {
+        LOGGER.info("info is being called");
+        return restTemplate.getForObject("http://localhost:8007/info", String.class);
+    }
 
     @Bean
     public RestTemplate getRestTemplate() {
         return new RestTemplate();
     }
 
-    @RequestMapping("/hi")
-    public String callHome() {
-        LOGGER.info( "calling trace service-hi  ");
-        return restTemplate.getForObject("http://localhost:8008/miya", String.class);
-    }
-
-    @RequestMapping("/info")
-    public String info() {
-        LOGGER.info("calling trace service-hi port:8007");
-        return "i'm service-hi port:8007";
-
-    }
 
     @Bean
     public Sampler defaultSampler() {
