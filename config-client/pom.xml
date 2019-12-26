@@ -9,13 +9,14 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.xbleey</groupId>
-    <artifactId>config</artifactId>
+    <artifactId>config-client</artifactId>
     <version>1.0</version>
-    <name>config</name>
-    <description>config server</description>
+    <name>config-client</name>
+    <description>config-client</description>
 
     <properties>
         <java.version>1.8</java.version>
+        <spring-cloud-services.version>2.1.4.RELEASE</spring-cloud-services.version>
         <spring-cloud.version>Hoxton.SR1</spring-cloud.version>
     </properties>
 
@@ -25,16 +26,21 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-server</artifactId>
+            <groupId>io.pivotal.spring.cloud</groupId>
+            <artifactId>spring-cloud-services-starter-config-client</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
         <dependency>
@@ -56,6 +62,13 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
                 <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.pivotal.spring.cloud</groupId>
+                <artifactId>spring-cloud-services-dependencies</artifactId>
+                <version>${spring-cloud-services.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
