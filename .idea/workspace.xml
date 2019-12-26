@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b1d88369-518a-4c66-8a22-1bdc4f3915c2" name="Default Changelist" comment="v1.0&#10;1.创建文件&#10;2.加入了spring cloud eureka&#10;3.加入了spring actuator&#10;4.可以完美运行">
-      <change afterPath="$PROJECT_DIR$/zipkin/src/main/java/com/xbleey/controller/HiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zipkin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zipkin/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zipkin/src/main/java/com/xbleey/ZipkinApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/zipkin/src/main/java/com/xbleey/ZipkinApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zipkin/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/zipkin/src/main/resources/application.properties" afterDir="false" />
+    <list default="true" id="b1d88369-518a-4c66-8a22-1bdc4f3915c2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -167,22 +160,7 @@
     <option name="allServicesViewState">
       <serviceView>
         <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@59423d4a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@59423d4a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@6b9628c3" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@59423d4a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@2be44096" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-          </expand>
+          <expand />
           <select />
         </treeState>
       </serviceView>
@@ -213,7 +191,16 @@
       <workItem from="1559787907100" duration="8485000" />
       <workItem from="1577339876388" duration="1289000" />
       <workItem from="1577341186489" duration="1112000" />
+      <workItem from="1577343193151" duration="721000" />
     </task>
+    <task id="LOCAL-00001" summary="v1.4idea的模块配置修改">
+      <created>1577343296670</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1577343296670</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,7 +221,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="v1.0&#10;1.创建文件&#10;2.加入了spring cloud eureka&#10;3.加入了spring actuator&#10;4.可以完美运行" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.0&#10;1.创建文件&#10;2.加入了spring cloud eureka&#10;3.加入了spring actuator&#10;4.可以完美运行" />
+    <MESSAGE value="v1.4idea的模块配置修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.4idea的模块配置修改" />
   </component>
   <component name="mavenExecuteGoalHistory">
     <option value="" />
