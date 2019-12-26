@@ -11,8 +11,10 @@
 package com.xbleey.cloudproviderdept8001.controlller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -28,13 +30,13 @@ public class RegisterController {
 
     @Autowired
     DiscoveryClient discoveryClient;
-
-    @GetMapping("/dc")
+    @GetMapping(value ="/dc")
     public String dc() {
         String services = "Services: " + discoveryClient.getServices();
         System.out.println(services);
         return services;
     }
+
 }
  
 
