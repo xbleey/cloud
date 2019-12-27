@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: query_route
+---
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: query_route
+          uri: http://httpbin.org:80/get
+          predicates:
+            - Query=foo, ba.
+  profiles: query_route

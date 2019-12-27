@@ -16,6 +16,7 @@
         <option value="$PROJECT_DIR$/zipkin1/pom.xml" />
         <option value="$PROJECT_DIR$/hystrix-turbine/pom.xml" />
         <option value="$PROJECT_DIR$/gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/predicate-factory/pom.xml" />
       </list>
     </option>
   </component>

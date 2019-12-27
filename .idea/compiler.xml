@@ -8,7 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-provider-dept-8001" />
         <module name="zuul" />
-        <module name="config" />
+        <module name="client" />
+        <module name="predicate-factory" />
         <module name="zipkin" />
         <module name="zipkin1" />
         <module name="feign" />
@@ -16,7 +17,7 @@
         <module name="hystrix-turbine" />
         <module name="gateway" />
         <module name="config-client" />
-        <module name="client" />
+        <module name="config" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -35,6 +36,7 @@
       <module name="feign" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="hystrix-turbine" options="-parameters" />
+      <module name="predicate-factory" options="-parameters" />
       <module name="ribbon" options="-parameters" />
       <module name="zipkin" options="-parameters" />
       <module name="zipkin1" options="-parameters" />

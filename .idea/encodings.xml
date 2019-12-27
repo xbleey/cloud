@@ -9,6 +9,7 @@
     <file url="file://$PROJECT_DIR$/feign" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hystrix-turbine" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/predicate-factory" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ribbon" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipkin" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipkin1" charset="UTF-8" />

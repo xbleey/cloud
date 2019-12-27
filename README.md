@@ -13,6 +13,8 @@
   - [x] config client
   - [x] config client(集成了 Spring Bus)
   - [x] zipkin
+  - [x] hystrix-turbine
+  - [x] GateWay(Predict、Filter)
  ```
   1. 没有使用到数据库，全为rest服务。
   2. 看看就好，没有什么值得学习的。
